@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thank You :--))</title>
+        <style>
+.bgdimg{
+  background-image: "1@.jpg";
+} 
+.center {
+  text-align: center;
+ 
+}
+.img {
+  border-radius: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27%;
+}
+</style>
+    </head>
+
+    <body style="background-color:LightYellow;padding: 0px;">
+
+   <div class="jumbotron text-center" class="center" style="padding: 0px">
+      <img   src=" {{ url_for('static',filename='aj.jpg' ) }}" alt="Anshul" style="width: 10%;">
+   <br>
+ 
+
+    <h1 class="center" style="color:MidnightBlue;  border: 3px solid orange;"> WECLOME TO NITK .....  <h1>
+        
+<h2 class="center" style="color:darkred; padding-left: 100px; font-style: italic; font-size:35px; " >{{ name.capitalize() }} </h2>
+    <br>
+      <h2 class="center"style="color:indigo;  border: 3px solid maroon;"> Your E-mail is : </h2>
+    <br>
+    <h2  class="center" style="color: lime ; padding-left: 100px; font-style: italic; font-size:25px; ">   {{ email }} </h2>
+ 
+    <br>
+
+    <br>
+         <a href="https://www.nitk.ac.in"  target="_blank">   <img  class="img , center"  src=" {{ url_for('static',filename='5.png' ) }}" alt="Anshul" height="164" width="433" ></a>
+         <br>
+    <p class="lead , center"  style="font-style: bold; font-size:25px; border: 3px solid blue;"> Please check our NITK official website for further details.</p>
+    <br>
+           <p class="lead , center" style="color:DodgerBlue; font-style: italic; font-size:26px;"> YOUR COMMENT IS RECORDED SUCCESSFULLY</p>
+          <img  class="img , center" src=" {{ url_for('static',filename='1.jpg' ) }}" alt="Anshul" height="114" width="143"   style=" border: 10px solid transparent ">
+    <p>
+        <br>
+   <button style="background-color:LightGray ;  color:indigo; font-size: 23px; " type="button"><a href=""> BACK TO HOME PAGE </a></button>
+    </p>
+
+    
+     
+
+</div>
+
+    </body>
+
+</html>
+

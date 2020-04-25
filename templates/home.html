@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+
+	<title>Django Blog - {{title }}</title>
+{% else %}
+
+	<title>Django Blog</title>
+	{% endif %}
+
+  <style >
+    body {
+ 	background-color: lightblue;
+}
+</style>
+</head>
+
+<body>
+  <h1 style="background-color:cyan;">Hello World</h1>
+  <h2>Anshul joshi</h2>
+  <h3>Anji</h3>
+  {% for post in posts %}
+    <h3 >{{ post.tittle }}</h3>
+    <p>By {{ post.author }} for Rs {{post.price}}</p>
+    
+    {% endfor %}
+</body>
+</html>
